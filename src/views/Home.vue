@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <b-button>
+      title="test"
+    </b-button>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -16,3 +19,9 @@ export default {
   }
 }
 </script>
+
+<style lang='scss'>
+  .home {
+    background-color: #121212
+  }
+</style>
