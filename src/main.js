@@ -1,4 +1,4 @@
-import Vue from 'vue'
+
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -8,6 +8,12 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import './assets/styles/index.css'
+import Element from 'element-ui'
+import locale from 'element-ui/lib/locale/lang/en'
+import Vue from 'vue'
+
+Vue.use(Element, { locale })
 
 library.add(faChevronRight)
 
