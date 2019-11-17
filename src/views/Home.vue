@@ -1,27 +1,40 @@
 <template>
   <div class="home">
-    <b-button>
-      title="test"
-    </b-button>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Home page</h1>
+    
   </div>
 </template>
 
+
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+
+  },
+  data() {
+    return {
+
+    }
+  },
+
+  methods: {
+    handleOpen(key, keyPath) {
+        console.log(key, keyPath);
+    },
+    handleClose(key, keyPath) {
+      console.log(key, keyPath);
+    }
   }
 }
 </script>
 
 <style lang='scss'>
   .home {
-    background-color: #121212
+    background-color: #121212;
+    height: 100%;
+    width: 100%;
   }
+  
 </style>

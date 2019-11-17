@@ -13,7 +13,8 @@
         </el-col>
         <el-col :span="6">
             <fade-transition :duration="100" :delay="2000">
-                <div v-if="button" >
+                
+                <div v-if="button" @click="handleContinueClicked">
                     <el-card style="background-color: #121212; border-weight: 0">
                         <font-awesome-icon icon="chevron-right"  color="#FFFFFF"/>
                         <h1>Continue</h1>
@@ -42,7 +43,8 @@ export default {
     },
     methods: {
         handleContinueClicked() {
-            console.log('cicked')
+            //animation for the button 
+            this.$router.push('home');
         },
     },
     mounted() {
